@@ -9,7 +9,7 @@ const Navbar = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <h1>Pranav</h1>
+      
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>

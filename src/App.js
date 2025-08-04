@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <nav className="navbar">
-        <h1>Pranav</h1>
+        <h1>𝒑𝒓𝒂𝒏𝒂𝒗</h1>
         <ul>
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -27,7 +27,7 @@ function App() {
           <li><a href="#github">GitHub</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="#contact" className="btn">Hire Me</a>
+        <a href="PranavBadaskar-Resume.pdf" download className="btn">Resume</a>
       </nav>
 
       <Hero />
