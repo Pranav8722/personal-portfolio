@@ -5,19 +5,19 @@ const manualProjects = [
   {
     name: "Project Paradox",
     desc: "Crop recommendation system",
-    img: "/images/paradox.jpg",
+    // img: "/images/paradox.png",
     link: "https://github.com/Pranav8722/Project-Paradox"
   },
   {
     name: "Milk Dairy Billing",
     desc: "Console-based billing app",
-    img: "/images/dairy.jpg",
+    // img: "/images/dairy.jpg",
     link: "https://github.com/Pranav8722/Milk-Dairy-Billing"
   },
   {
     name: "Academia",
     desc: "Mini e-learning site",
-    img: "/images/academia.jpg",
+    // img: "/images/academia.jpg",
     link: "https://github.com/Pranav8722/Academia"
   }
 ];
@@ -78,7 +78,7 @@ const Projects = () => {
         {manualProjects.map((project, index) => (
           <Tilt key={index} tiltMaxAngleX={10} tiltMaxAngleY={10} scale={1.05} transitionSpeed={400}>
             <div className="project-card">
-              <img src={project.img} alt={project.name} />
+              {/* <img src={project.img} alt={project.name} /> */}
               <h3>{project.name}</h3>
               <p>{project.desc}</p>
               <a href={project.link} target="_blank" rel="noreferrer">View on GitHub</a>
