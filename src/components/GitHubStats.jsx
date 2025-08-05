@@ -4,19 +4,15 @@ const GitHubStats = () => {
   const [githubData, setGithubData] = useState(null);
   const [errorMsg, setErrorMsg] = useState("");
 
-  const token = process.env.REACT_APP_GITHUB_TOKEN;
 
-  useEffect(() => {
-    fetch("https://api.github.com/users/Pranav8722", {
-      headers: token ? { Authorization: `token ${token}` } : {}
-    })
-      .then((response) => {
-        if (!response.ok) throw new Error("GitHub API Error");
-        return response.json();
-      })
-      .then((data) => setGithubData(data))
-      .catch(() => setErrorMsg("Could not load GitHub data (API limit reached)."));
-  }, [token]);
+
+useEffect(() => {
+  fetch("https://api.github.com/users/Pranav8722")
+    .then((response) => response.json())
+    .then((data) => setGithubData(data))
+    .catch((error) => console.error("Error fetching GitHub data:", error));
+}, []);
+
 
   if (errorMsg) return <p style={{ textAlign: "center", color: "red" }}>{errorMsg}</p>;
   if (!githubData) return <p style={{ textAlign: "center" }}>Loading GitHub Stats...</p>;
