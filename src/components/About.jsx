@@ -1,4 +1,6 @@
 import React from "react";
+
+
 // import aboutImg from "./itachi.jpg"; // Place your image in /src/assets
 
 const About = () => {
@@ -6,7 +8,8 @@ const About = () => {
     <section id="about" className="scroll-animate about-section">
       <h2>About Me</h2>
       <div className="about-container">
-        <img src="/profile.jpg" alt="About Me" className="about-img" />
+        <img src={`${process.env.PUBLIC_URL}/profile.jpg`} alt="Profile" className="about-img" />
+
 
         <div className="about-text">
           <h3>Hello! I'm Pranav</h3>
