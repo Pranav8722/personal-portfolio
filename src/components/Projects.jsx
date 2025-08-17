@@ -16,10 +16,10 @@ const manualProjects = [
     link: "https://github.com/Pranav8722/milkdairy-app/tree/main/try"
   },
   {
-    name: "face attandance",
-    desc: "Console-based billing app",
-    img: "dairy.png",
-    link: "https://github.com/Pranav8722/milkdairy-app/tree/main/try"
+    name: "signature matching ",
+    desc: "match two signature and identify orignality",
+    img: "signature.png",
+    link: "https://github.com/Pranav8722/signature-matching.git"
   },
   {
     name: "Academia",
@@ -59,7 +59,7 @@ const Projects = () => {
         setLoading(false);
       })
       .catch(() => {
-        setErrorMsg("Could not load GitHub repositories (API limit reached).");
+        setErrorMsg("Could not load GitHub repositories (API limit reached) wait for 1/hr or try connecting to other wifi 😔.");
         setLoading(false);
       });
   }, [token]);
